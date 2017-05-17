@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Griffy" rel="stylesheet">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head> 
+
+  <body>
+      <div class="nav">Welcome to paint</div>
+      <div class="menu row">
+        <div class="col-md-6 tools">Tools</div>
+        <div class="col-md-6">View</div>
+      </div>
+      <div class="interface">
+        <div class="tool1">
+          <div class="t1">
+          <button class="js-button-action btn btn-primary" data-filter="noise">Noise</button>
+          <button class="js-button-action btn btn-primary" data-filter="inverse">Инверсия</button>
+          <button class="js-button-action btn btn-primary" data-filter="treshold">Treshold</button>
+          <button class="js-button-action btn btn-primary" data-filter="brightness">Brightness</button>
+          <button class="js-button-action btn btn-primary" data-filter="grayscale">Grayscale</button>  
+          <button class="js-button-action btn btn-primary" data-filter="contrast">Constrast</button>
+          <div class="t2">
+          <button class="js-button-action btn btn-primary" data-filter="duotone">Duotone</button>
+          <button class="js-button-action
+          btn btn-primary" data-filter="sharpen">Sharpen</button>
+          <button class="js-button-action btn btn-primary" data-filter="blur">Blur</button>
+          <button class="js-button-action btn btn-primary" data-filter="sobel">Sobel</button>
+          <button class="js-button-action
+          btn btn-primary" data-filter="laplace">Laplace</button>
+          </div>
+          </div>
+          <div class="t3">
+          <button id="pencil" onclick="changeColor('black')" class="btn btn-info">Pencil</button>
+          <button id="eraser" class="btn btn-info">Eraser</button>
+          </div>
+          <div id="colors">
+           <button id="green" onclick="changeColor('green')" class="btn btn-success"></button>
+           <button id="blue" onclick="changeColor('blue')" class="btn btn-primary"></button>
+           <button id="red" onclick="changeColor('red')" class="btn btn-danger"></button>
+           <button id="yellow" onclick="changeColor('yellow')" class="btn btn-warning"></button>
+           <button id="cyan" onclick="changeColor('cyan')" class="btn btn-info"></button>
+           </div>
+        </div>
+        <div class="tool2 canvas-container">
+          <canvas id="canvas" height="500" width="715"></canvas>
+        </div>
+      </div>
+      <footer>
+         &copy 2017 Paint  
+      </footer>
+  </body>
+</html>
